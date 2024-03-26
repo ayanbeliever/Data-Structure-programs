@@ -22,57 +22,6 @@ node* createNode(int value) {
     return newNode;
 }
 
-// void insertion(node* root , int value) {
-//     if(root == NULL) {
-//         root = createNode(value);
-//         return;
-//     }
-//     node* insertNode = createNode(value);
-//     node* temp = root;
-//     node* prev;
-//     while(temp != NULL) {
-//         prev = temp;
-//         if(value > temp->data) {
-//             temp = temp->rlink;
-//         }
-//         else {
-//             temp = temp->llink;
-//         }
-//     }
-
-//     if(value > prev->data) {
-//         prev->rlink = insertNode;
-//     }
-//     else {
-//         prev->llink = insertNode;
-//     }
-// }
-
-// node* insertion(node* root, int value) {
-//     if(root == NULL) {
-//         return createNode(value);
-//     }
-//     node* nodeToInsert = createNode(value);
-//     node* temp = root;
-//     node* prev;
-//     while(temp != NULL) {
-//         prev = temp;
-//         if(value >= temp->data) {
-//             temp = temp->rlink;
-//         }
-//         else {
-//             temp = temp->llink;
-//         }
-//     }
-//     if(value > prev->data) {
-//         prev->rlink = nodeToInsert;
-//     }
-//     else {
-//         prev->llink = nodeToInsert;
-//     }
-//     return root;
-// }
-
 node *insertion(node* root, int value) {
     if(root == NULL) {
         return createNode(value);
